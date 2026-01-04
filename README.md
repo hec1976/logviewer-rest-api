@@ -78,7 +78,7 @@ Die Konfiguration erfolgt ueber eine Datei `config.json` im gleichen Verzeichnis
 
 ~~~json
 {
-  "listen": "127.0.0.1:5005",
+  "listen": "127.0.0.1:3000",
   "https": false,
   "ssl_cert_file": "",
   "ssl_key_file": "",
@@ -149,7 +149,7 @@ Wenn kein Token gesetzt ist, erfolgt kein Token-Check.
 ~~~json
 {
   "info": "Log-Viewer REST-API",
-  "version": "1.2",
+  "version": "1.3",
   "api": [
     "/logdirs",
     "/log/:name",
@@ -258,7 +258,7 @@ Description=Log Viewer REST API
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/perl /opt/logviewer/app.pl
+ExecStart=/usr/bin/perl /opt/logviewer/logviewer-agent.pl
 WorkingDirectory=/opt/logviewer
 Restart=always
 Environment=API_TOKEN=geheim
