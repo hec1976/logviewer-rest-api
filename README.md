@@ -1,9 +1,7 @@
+# Log Viewer REST API (Mojolicious)
 <p align="center">
   <img src="docs/logviewer-rest-api.png" alt="Mojo LogViewer API" width="900">
 </p>
-
-
-# Log Viewer REST API (Mojolicious)
 
 Ein leichtgewichtiges, sicheres Log-Viewer-Backend auf Basis von **Mojolicious::Lite**.
 Das Tool stellt Logdateien ueber eine REST-API zur Verfuegung und ist fuer den praxisnahen Admin-Einsatz gedacht.
