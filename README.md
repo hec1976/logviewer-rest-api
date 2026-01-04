@@ -5,6 +5,11 @@ Das Tool stellt Logdateien ueber eine REST-API zur Verfuegung und ist fuer den p
 
 Kein UI, kein Overengineering, klarer Fokus auf Sicherheit und Stabilitaet.
 
+
+<p align="center">
+  <img src="docs/logviewer-rest-api.png" alt="Mojo LogViewer API" width="900">
+</p>
+
 ---
 
 ## Features
