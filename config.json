@@ -1,13 +1,31 @@
 {
-  "listen": "0.0.0.0:3000",
-  "https": false,
+  "listen": "127.0.0.1:5005",
+  "https": 0,
   "ssl_cert_file": "",
   "ssl_key_file": "",
-  "logfile": "/var/log/logviewer-agent.log",
-  "allowed_ips": ["127.0.0.1", "192.168.20.0/24", "10.0.0.0/8"],
+  "logfile": "/var/log/logviewer.log",
+
+  "allow_no_token": false,
+  "expose_log_paths": false,
+
+  "allowed_ips": ["127.0.0.1", "10.0.0.0/8"],
+
+  "cors_enabled": false,
+  "cors_allowed_origins": [],
+
+  "trust_proxy": false,
+  "trusted_proxies": ["127.0.0.1"],
+
+  "default_lines": 2000,
+  "min_lines": 10,
+  "max_lines": 50000,
+
   "logdirs": {
     "system": {
       "path": "/var/log"
+    },
+    "mail": {
+      "path": "/var/log/mail"
     }
   }
 }
